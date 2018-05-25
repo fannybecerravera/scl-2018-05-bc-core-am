@@ -39,3 +39,37 @@ p {
     margin-left: 12em;
     margin-right: 12em;
 }
+
+#position{
+    height: 3em;
+}
+
+#code{ 
+    height: 5em;
+}
+
+#code1{
+    height: 5em;
+}
+
+#message{
+    height: 5em;
+}
+
+#menssageEncode{
+    height: 5em;
+}
+
+#text {
+    background-color: blueviolet
+}
+
+#txt{
+    background-color: blueviolet
+}
+
+#lineOfText{
+    background-color: blueviolet
+}
+
+
