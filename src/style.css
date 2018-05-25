@@ -1,2 +1,41 @@
 /* Acá va tu código */
+header{
+    text-align: center;
+    color: rgb(6, 12, 121); 
+}
 
+.first-section {
+    text-align: center;
+}
+
+.second-section{
+    text-align: center;
+}
+
+.third-section{
+    text-align: center;
+}
+
+body{
+    background-image: url("bill.jpg");
+}
+
+h1{
+    font-size: 3em;
+    display: 
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1,5em;
+}
+
+p {
+    font-size: 2em;
+    background-color: rgb(109, 24, 189);
+    margin-left: 12em;
+    margin-right: 12em;
+}
