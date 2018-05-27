@@ -1,38 +1,26 @@
 /* Acá va tu código */
-#framework{
-background-color: blanchedalmond
+body{
+    display: flex;
+    background-image: url("bill.jpg");
+    padding-top: 1em;
+    padding-left:10em;
+    padding-right: 10em;
+    padding-bottom: 10em;
+    
+}
+
+ #framework{
+background-color: blanchedalmond;
+margin: 0 auto;
+border-radius: 1em;
 }
 
 header{
     text-align: center;
 }
 
-.first-section {
-    text-align: center;
-}
-
-.second-section{
-    margin-left: 0em;
-    text-align: center;
-}
-
-.third-section{
-    margin-left: 0em;
-    margin-top: 1em;
-    text-align: center;
-}
-
-.fourth{
-  
-    content: white;
-
-}
-body{
-    background-image: url("bill.jpg");
-    display: flex;
-    padding-left: 30em;
-    padding-right: 20em;
-   
+.form {
+    margin: 1em 10em;
 }
 
 h1{
@@ -43,14 +31,36 @@ h2{
     font-size: 2em;
 }
 
-h3{
-    font-size: 1,5em;
-}
-
-#answer{
-    height: 5em;
+p{
+    text-align: center;
 }
 
 #position{
     margin-bottom: 2em;
+    margin-left: 2em;
+}
+
+#introduction{
+    margin-right: 1em;
+}
+#text-entry{
+    text-align: center;
+    margin-left: 14em;
+}
+
+#buttons{
+    text-align: center;
+    border-radius: 2em;  
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+}
+
+#box{
+    width: 15em;
+    height:5em;
+    background-color: white;
+    border: thin solid rgb(93, 93, 95);
+    margin-bottom: 20%;
+
 }
