@@ -36,13 +36,22 @@ p{
 }
 
 #position{
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     margin-left: 2em;
+    margin-top: 0em;
 }
 
 #introduction{
     margin-right: 1em;
 }
+
+#slc{
+  display: inline;
+  margin-left: 6em;
+  margin-top: 0em;
+
+}
+
 #text-entry{
     text-align: center;
     margin-left: 14em;
@@ -50,7 +59,7 @@ p{
 
 #buttons{
     text-align: center;
-    border-radius: 2em;  
+    border-radius: 4em;  
     margin-top: 2em;
     margin-bottom: 2em;
     margin-right: 1em;
