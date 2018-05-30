@@ -1,18 +1,15 @@
 /* Acá va tu código */
-window.onload = function() {
-encode:(offset, string)=> {
-    for(let i= 0; i < string.let; i++){
-        let newPositionAscii = (string[i].charCodeAt(i) - offset) % 26 + 65;
-        String.fromCharCode(newPositionAscii);
-    }
-}
-decode:(offset, string)=> {
-    for(let i= 0; i < string.let; i++){
-        let newPositionAscii = (string[i].charCodeAt(i) - offset) % 26 + 65;
-        String.fromCharCode(newPositionAscii);
-    }
-}
+const position = document.getElementById ("position");
+position.innerHTML = 
 
+const text = document.getElementById ("text");
+position.innerHTML = 
 
-    
-}
+const btn1 = document.getElementById ("btn1");
+btn.addEventListener ("click", function (encode));
+
+const btn2 = document.getElementById ("btn2"); 
+btn.addEventListener ("click", function (decode));
+
+const result = document.getElementById ("result"); 
+result.innerHTML = " Mensaje es : " + 
