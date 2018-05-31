@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="root"></div>
   <section id="framework">
   
     <!-- Bienvenida e intrucciones de uso -->
@@ -20,12 +21,12 @@
   <!-- Ingreso del número de posición escogida para cifrado y descifrado -->
   <section class="form">
       <p id="num"><strong>Ingresa la posición:</strong></p>
-      <input type="number" id="position">
+      <input type="number" id="numOffset">
   </section>
    
   <!-- Ingreso de mensaje o codigo -->
   <section class="second-section">
-   <textarea id= "text" placeholder="Ingresa tu mesaje o codigo"></textarea>
+   <textarea id= "str" placeholder="Ingresa tu mesaje o código"></textarea>
   </section>
   
   <!--Botones -->
@@ -46,7 +47,7 @@
  
      
      
- <div id="root"></div>
+ </div>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
