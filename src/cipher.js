@@ -1,36 +1,26 @@
 window.cipher = {
   encode: (str, offset) => {
-    let encodeResult = "";  
-  /* Aqui se guardara el texto ya codificado con el numero de desplazamientos*/
-     for(let i = 0; i < str.length; i++) {
-        //traducira al número de la letra en el Código ASCII
-  	    if(65 <= str.charCodeAt(i) && str.charCodeAt(i) <= 90){
-  	        //Condicion para las mayusculas en ASCII
-          let msgEncode = (((str.charCodeAt(i) - 65 + parseInt(offset)) % 26) + 65);
-          encodeResult += String.fromCharCode (msgEncode);
-  	     //Agregando la nueva posicion y pasandolo a letra
+    let encodeResult = ""; //Guardo el mensaje cifrado con el número de desplazamiento
+      for(let i = 0; i < str.length; i++) { //arreglo de caracteres
+        if(65 <= str.charCodeAt(i) && str.charCodeAt(i) <= 90){ //Condicion para mayúsculas.Traducira al número de la letra en el Código ASCII
+  	        let msgEncode = (((str.charCodeAt(i) - 65 + parseInt(offset)) % 26) + 65); //Se agrega el número de posiciones y nos da el número de codigo ASCII
+          encodeResult += String.fromCharCode (msgEncode);//Pasando el mensaje de número a letra
   	    } else { 
-  	       //En el caso de aparecer espacios 
-        encodeResult += str.charAt(i)}; //por que es text
+  	      encodeResult += str.charAt(i)}; //En el caso de aparecer espacios o otro signo
   	  }
   	     return encodeResult;
   },
   
-    decode: (str, offset) => {
-      let decodeResult = "";  
-      /* Aqui se guardara el texto ya codificado con el numero de desplazamientos*/
-         for(let i = 0; i < str.length; i++) {
-            //traducira al número de la letra en el Código ASCII
-            if(65 <= str.charCodeAt(i) && str.charCodeAt(i) <= 90){
-                //Condicion para las mayusculas en ASCII
-              let msgEncode = (((str.charCodeAt(i) + 65 - parseInt(offset)) % 26) + 65);
-              decodeResult += String.fromCharCode (msgEncode);
-             //Agregando la nueva posicion y pasandolo a letra
-            } else { 
-               //En el caso de aparecer espacios 
-            decodeResult += str.charAt(i)}; //por que es text
-          }
-             return decodeResult;
-
-     }
-}
+  decode: (str, offset) => {
+    let decodeResult = "";  //Guardo el mensaje cifrado con el número de desplazamiento
+      for(let i = 0; i < str.length; i++) { //arreglo de caracteres
+        if(65 <= str.charCodeAt(i) && str.charCodeAt(i) <= 90){ //Condicion para mayúsculas.Traducira al número de la letra en el Código ASCII
+            let msgEncode = (((str.charCodeAt(i) + 65 - parseInt(offset)) % 26) + 65); //Se restan el número de posiciones y nos da el número de codigo ASCII
+          decodeResult += String.fromCharCode (msgEncode); //Pasando el mensaje de número a letra
+        } else { 
+          decodeResult += str.charAt(i)}; //En el caso de aparecer espacios o otro signo
+        }
+      }
+          return decodeResult;
+  }
+ }
