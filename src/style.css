@@ -3,9 +3,9 @@ body{
     display: flex;
     background-image: url("bill.jpg");
     padding-top: 1em;
-    padding-left:10em;
+    padding-left:25em;
     padding-right: 10em;
-    padding-bottom: 10em;
+    padding-bottom: 2em;
     
 }
 
@@ -25,44 +25,47 @@ header{
 
 h1{
     font-size: 3em; 
-}
-
-h2{
-    font-size: 2em;
+    margin-bottom: 1em;
 }
 
 p{
     text-align: center;
 }
 
-#introduction{
-    margin-right: 1em;
-}
+
 #numOffset{
     width: 3em;
     margin-bottom: 1em;
-    margin-left: 7em;
+    margin-left: 10em;
     margin-top: 0em;
 }
 
 #str{
-    text-align: center;
+    width: 25em;
+	height: 7em;
+    resize: none;
     margin-left: 12em;
+    text-align: center;
 }
 
 #buttons{
     text-align: center;
     border-radius: 4em;  
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     margin-right: 1em;
 }
 
 #box{
-    width: 15em;
-    height:5em;
+    width: 21em;
+    height: 6em;
     background-color: white;
-    border: thin solid rgb(93, 93, 95);
-    margin-bottom: 20%;
+    border: thin solid rgba(125, 125, 129, 0.911);
+    margin-bottom: 50%;
+    
+}
 
+#close{
+    text-align: center;
+    margin-top: 1em;
 }
