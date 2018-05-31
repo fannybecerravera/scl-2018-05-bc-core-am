@@ -1,5 +1,5 @@
 window.onload = function(){
-    
+
     //Guardando información del mensaje y numero de posiciones en el boton cifrar
     const btnEncode = document.getElementById("btn1");
     btnEncode.addEventListener ("click", function() {
